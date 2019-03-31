@@ -113,7 +113,7 @@ PSF has been tested tuned well for high performance. Data structures are used by
 [![Pulsar Server Framework class diagram][2]][2]
 ## Underlying Technology:
 
-The Pulsar framework has been built around a tiny network library LIBUV (which is also used by Google's Node.js servers). The core technology is asynchronous I/O based on event loops. That makes it really fast and reliable.
+The Pulsar framework has been built around a tiny network library [LIBUV][3]  (which is also used by Google's Node.js servers). The core technology is asynchronous I/O based on event loops. That makes it really fast and reliable.
 
 ## API Documentation:
 
@@ -186,3 +186,4 @@ Along with the PSF code is provided source code of sample server developed using
 
   [1]: https://i.stack.imgur.com/29xpb.jpg
   [2]: https://i.stack.imgur.com/tUcOr.jpg
+  [3]: https://github.com/libuv/libuv
