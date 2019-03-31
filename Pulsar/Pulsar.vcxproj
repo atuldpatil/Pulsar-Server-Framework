@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_MultithreadedDLL|x64">
+      <Configuration>Debug_MultithreadedDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Multithreaded|x64">
+      <Configuration>Debug_Multithreaded</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_MultithreadedDLL|x64">
+      <Configuration>Release_MultithreadedDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Multithreaded|x64">
+      <Configuration>Release_Multithreaded</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF86B5AF-7B05-499D-A563-3829FC201516}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Hubble</RootNamespace>
+    <ProjectName>Pulsar</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Multithreaded|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_MultithreadedDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Multithreaded|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_MultithreadedDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Multithreaded|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_MultithreadedDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Multithreaded|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_MultithreadedDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Multithreaded|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_MTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_MultithreadedDLL|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_MDd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Multithreaded|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_MT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_MultithreadedDLL|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_MD</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Multithreaded|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DLL_EXPORTS;_DEBUG;_CRTDBG_MAP_ALLOC;WIN32;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_GNU_SOURCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>LIBUV\libuv-v1.7.5\include;C:\Program Files (x86)\Visual Leak Detector\include;$(ProjectDir)\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;Psapi.lib;Iphlpapi.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Visual Leak Detector\lib\Win64</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Lib>
+    <Bscmake>
+      <OutputFile>$(IntDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_MultithreadedDLL|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DLL_EXPORTS;_DEBUG;_CRTDBG_MAP_ALLOC;WIN32;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_GNU_SOURCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>LIBUV\libuv-v1.7.5\include;C:\Program Files (x86)\Visual Leak Detector\include;$(ProjectDir)\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;Psapi.lib;Iphlpapi.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Visual Leak Detector\lib\Win64</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Lib>
+    <Bscmake>
+      <OutputFile>$(IntDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Multithreaded|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>DLL_EXPORTS;NDEBUG;WIN32;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_GNU_SOURCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>LIBUV\libuv-v1.7.5\include;C:\Program Files (x86)\Visual Leak Detector\include;$(ProjectDir)\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;Psapi.lib;Iphlpapi.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Visual Leak Detector\lib\Win64</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <OutputFile>$(IntDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_MultithreadedDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>DLL_EXPORTS;NDEBUG;WIN32;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_GNU_SOURCE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>LIBUV\libuv-v1.7.5\include;C:\Program Files (x86)\Visual Leak Detector\include;$(ProjectDir)\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;Psapi.lib;Iphlpapi.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Visual Leak Detector\lib\Win64</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Bscmake>
+      <OutputFile>$(IntDir)$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ClientsPool.h" />
+    <ClInclude Include="include\CommonComponents.h" />
+    <ClInclude Include="include\ConnectionsManager.h" />
+    <ClInclude Include="include\LocalClientsManager.h" />
+    <ClInclude Include="include\Logger.h" />
+    <ClInclude Include="include\PeerServersManager.h" />
+    <ClInclude Include="include\Profiler.h" />
+    <ClInclude Include="include\Pulsar.h" />
+    <ClInclude Include="include\RequestParser.h" />
+    <ClInclude Include="include\RequestProcessor.h" />
+    <ClInclude Include="include\RequestProcessor_ForwardedResponses.h" />
+    <ClInclude Include="include\RequestResponse.h" />
+    <ClInclude Include="include\resource.h" />
+    <ClInclude Include="include\targetver.h" />
+    <ClInclude Include="include\TypeDefinitions.h" />
+    <ClInclude Include="include\WriteToFile.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\android-ifaddrs.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\pthread-fixes.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\stdint-msvc2008.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\tree.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-aix.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-bsd.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-darwin.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-errno.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-linux.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-sunos.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-threadpool.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-unix.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-version.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-win.h" />
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\fs-poll.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\inet.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\threadpool.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\uv-common.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\version.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\async.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\core.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\dl.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\error.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\fs-event.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\fs.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\getaddrinfo.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\getnameinfo.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\handle.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\loop-watcher.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\pipe.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\poll.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\process-stdio.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\process.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\req.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\signal.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\stream.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\tcp.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\thread.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\timer.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\tty.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\udp.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\util.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\winapi.c" />
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\winsock.c" />
+    <ClCompile Include="src\ClientsPool.cpp" />
+    <ClCompile Include="src\CommonComponents.cpp" />
+    <ClCompile Include="src\ConnectionsManager.cpp" />
+    <ClCompile Include="src\LocalClientsManager.cpp" />
+    <ClCompile Include="src\Logger.cpp" />
+    <ClCompile Include="src\PeerServersManager.cpp" />
+    <ClCompile Include="src\Profiler.cpp" />
+    <ClCompile Include="src\RequestParser.cpp" />
+    <ClCompile Include="src\RequestProcessor.cpp" />
+    <ClCompile Include="src\RequestProcessor_ForwardedResponses.cpp" />
+    <ClCompile Include="src\RequestResponse.cpp" />
+    <ClCompile Include="src\WriteToFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Pulsar.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

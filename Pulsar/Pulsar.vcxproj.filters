@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\LIBUV">
+      <UniqueIdentifier>{0221d0e0-fdc3-41b6-b38b-49fbf9a092b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LIBUV\Win">
+      <UniqueIdentifier>{b311a24f-7958-45f4-9925-92755e948e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LIBUV">
+      <UniqueIdentifier>{9bcfec8e-ca64-4453-9032-9fce5e815d69}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\android-ifaddrs.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\pthread-fixes.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\stdint-msvc2008.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\tree.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-aix.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-bsd.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-darwin.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-errno.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-linux.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-sunos.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-threadpool.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-unix.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-version.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="LIBUV\libuv-v1.7.5\include\uv-win.h">
+      <Filter>Header Files\LIBUV</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ClientsPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CommonComponents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ConnectionsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LocalClientsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PeerServersManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Profiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pulsar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RequestProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RequestResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TypeDefinitions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WriteToFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RequestProcessor_ForwardedResponses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RequestParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\fs-poll.c">
+      <Filter>Source Files\LIBUV</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\inet.c">
+      <Filter>Source Files\LIBUV</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\threadpool.c">
+      <Filter>Source Files\LIBUV</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\uv-common.c">
+      <Filter>Source Files\LIBUV</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\version.c">
+      <Filter>Source Files\LIBUV</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\async.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\core.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\dl.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\error.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\fs.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\fs-event.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\getaddrinfo.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\getnameinfo.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\handle.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\loop-watcher.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\pipe.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\poll.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\process.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\process-stdio.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\req.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\signal.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\stream.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\tcp.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\thread.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\timer.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\tty.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\udp.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\util.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\winapi.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="LIBUV\libuv-v1.7.5\src\win\winsock.c">
+      <Filter>Source Files\LIBUV\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ClientsPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CommonComponents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConnectionsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LocalClientsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PeerServersManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Profiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RequestProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RequestResponse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WriteToFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RequestProcessor_ForwardedResponses.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RequestParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Pulsar.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="LICENSE.txt" />
+  </ItemGroup>
+</Project>

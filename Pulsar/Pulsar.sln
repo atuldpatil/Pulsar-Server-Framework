@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pulsar", "Pulsar.vcxproj", "{CF86B5AF-7B05-499D-A563-3829FC201516}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Multithreaded|Mixed Platforms = Debug_Multithreaded|Mixed Platforms
+		Debug_Multithreaded|Win32 = Debug_Multithreaded|Win32
+		Debug_Multithreaded|x64 = Debug_Multithreaded|x64
+		Debug_MultithreadedDLL|Mixed Platforms = Debug_MultithreadedDLL|Mixed Platforms
+		Debug_MultithreadedDLL|Win32 = Debug_MultithreadedDLL|Win32
+		Debug_MultithreadedDLL|x64 = Debug_MultithreadedDLL|x64
+		Release_Multithreaded|Mixed Platforms = Release_Multithreaded|Mixed Platforms
+		Release_Multithreaded|Win32 = Release_Multithreaded|Win32
+		Release_Multithreaded|x64 = Release_Multithreaded|x64
+		Release_MultithreadedDLL|Mixed Platforms = Release_MultithreadedDLL|Mixed Platforms
+		Release_MultithreadedDLL|Win32 = Release_MultithreadedDLL|Win32
+		Release_MultithreadedDLL|x64 = Release_MultithreadedDLL|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_Multithreaded|Mixed Platforms.ActiveCfg = Debug_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_Multithreaded|Mixed Platforms.Build.0 = Debug_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_Multithreaded|Win32.ActiveCfg = Debug_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_Multithreaded|x64.ActiveCfg = Debug_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_Multithreaded|x64.Build.0 = Debug_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_MultithreadedDLL|Mixed Platforms.ActiveCfg = Debug_MultithreadedDLL|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_MultithreadedDLL|Mixed Platforms.Build.0 = Debug_MultithreadedDLL|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_MultithreadedDLL|Win32.ActiveCfg = Debug_MultithreadedDLL|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_MultithreadedDLL|x64.ActiveCfg = Debug_MultithreadedDLL|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Debug_MultithreadedDLL|x64.Build.0 = Debug_MultithreadedDLL|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_Multithreaded|Mixed Platforms.ActiveCfg = Release_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_Multithreaded|Mixed Platforms.Build.0 = Release_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_Multithreaded|Win32.ActiveCfg = Release_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_Multithreaded|x64.ActiveCfg = Release_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_Multithreaded|x64.Build.0 = Release_Multithreaded|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_MultithreadedDLL|Mixed Platforms.ActiveCfg = Release_MultithreadedDLL|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_MultithreadedDLL|Mixed Platforms.Build.0 = Release_MultithreadedDLL|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_MultithreadedDLL|Win32.ActiveCfg = Release_MultithreadedDLL|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_MultithreadedDLL|x64.ActiveCfg = Release_MultithreadedDLL|x64
+		{CF86B5AF-7B05-499D-A563-3829FC201516}.Release_MultithreadedDLL|x64.Build.0 = Release_MultithreadedDLL|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
