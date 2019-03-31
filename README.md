@@ -181,7 +181,7 @@ Along with the PSF code is provided source code of sample server developed using
 ## Limitations:
 1.	Currently the source code is written and built in Microsoft Visual Studio 2012. However, not much OS specific calls have been used and hopefully with little efforts you should be able to make it to build on Linux and other operating systems
 
-2.	As mentioned before, in the current code only TCP protocol is supported. Although 
+2.	As mentioned before, in the current code only TCP protocol is supported. UDP is not yet supported. Therefore although the framework is very well tuned for performance, it still may not be useful for UDP based streaming purpose.
 
 
   [1]: https://i.stack.imgur.com/29xpb.jpg
