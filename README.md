@@ -1,4 +1,4 @@
-# Pulsar-Server-Framework
+# Pulsar Server Framework
 Pulsar Server Framework is a framework to develop your heavy duty server in C++ where client-to-client(s) communication is needed.
 
 ## What is Pulsar Server Framework?
