@@ -88,6 +88,8 @@ As we can see here, all your users are connected to different servers. Now let's
 
 ## Flow inside framework:
 
+[![Event loop and request processing][4]][4]
+
 Below is how we can describe flow of actions as they happen inside framework
 
 1.	PSF receives request sent by connected client
@@ -187,3 +189,4 @@ Along with the PSF code is provided source code of sample server developed using
   [1]: https://i.stack.imgur.com/29xpb.jpg
   [2]: https://i.stack.imgur.com/tUcOr.jpg
   [3]: https://github.com/libuv/libuv
+  [4]: https://i.imgur.com/XGbBvnI.jpg
