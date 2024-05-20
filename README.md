@@ -186,7 +186,7 @@ Along with the PSF code is provided source code of sample server developed using
 2.	As mentioned before, in the current code only TCP protocol is supported. UDP is not yet supported. Therefore although the framework is very well tuned for performance, it still may not be useful for UDP based streaming purpose.
 
 
-  [1]: https://i.stack.imgur.com/29xpb.jpg
-  [2]: https://i.stack.imgur.com/tUcOr.jpg
+  [1]: https://i.imgur.com/bEDTJKu.jpeg
+  [2]: https://i.imgur.com/0llji2w.jpeg
   [3]: https://github.com/libuv/libuv
   [4]: https://i.imgur.com/XGbBvnI.jpg
